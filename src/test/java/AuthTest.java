@@ -13,7 +13,7 @@ import static org.hamcrest.Matchers.empty;
 
 /**
  * Test for Taiga Login Auth API
- *
+ * /api/v1/auth
  */
 public class AuthTest {
 
