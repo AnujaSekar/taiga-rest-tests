@@ -86,7 +86,7 @@ public class ProjectTest {
 
     @Test
     public void testGet(){
-        //Get a Project is to find a specific project
+        //Get one project by Id.
 
     }
 
