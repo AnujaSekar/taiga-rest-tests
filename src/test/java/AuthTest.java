@@ -155,12 +155,6 @@ public class AuthTest {
                         statusCode(200).
                         body("auth_token", is(not(empty()))).
                         extract().path("auth_token");
-
-        given().log().all().
-                when().header("Authorization", "Bearer " + authToken).
-                post("https://api.taiga.io/api/v1/auth").
-                then().log().all().
-                statusCode(400);
     }
 
 }
