@@ -158,9 +158,9 @@ public class AuthTest {
 
         given().log().all().
                 when().header("Authorization", "Bearer " + authToken).
-                get("https://api.taiga.io/api/v1/auth").
+                post("https://api.taiga.io/api/v1/auth").
                 then().log().all().
-                statusCode(200);
+                statusCode(400);
     }
 
 }
